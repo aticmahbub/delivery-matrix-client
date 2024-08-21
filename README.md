@@ -75,10 +75,10 @@ Run the application
 
 
 # Run backend
-cd backend
-npm run dev
+`cd backend`
+`npm run dev`
 
 # Run frontend
-cd frontend
-npm start
+`cd frontend`
+`npm start`
 The app will be available at http://localhost:3000.
