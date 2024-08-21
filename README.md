@@ -1,10 +1,13 @@
-DeliveryMatrix
+# DeliveryMatrix
 Welcome to DeliveryMatrix - Your Ultimate Parcel Delivery Solution!
 
-website link: https://atic-delivery-matrix.netlify.app/
-admin: james.taylor@example.com
-password: 111111
-Features:
+
+# Website link: `https://atic-delivery-matrix.netlify.app/`
+`admin: james.taylor@example.com`
+`password: 111111`
+
+
+# Features:
 #Real-Time Tracking: Track your parcels in real-time from pickup to delivery, ensuring full transparency and peace of mind.
 
 #Customizable Delivery Options: Choose from a range of delivery options tailored to your needs, including express delivery, scheduled delivery, and more.
@@ -24,3 +27,58 @@ Features:
 #Global Coverage: Deliver your parcels anywhere in the world with our extensive network of delivery partners and global coverage.
 
 #Feedback Mechanism: Share your feedback and suggestions to help us continually improve our services and enhance your delivery experience.
+
+
+## Tech Stack
+- **Frontend:**
+  - React.js
+  - CSS/Tailwind/DaisyUI (Styling)
+
+  
+- **Backend:**
+  - Node.js
+  - Express.js
+  - MongoDB (Database)
+
+
+- **Others:**
+  - JWT for authentication
+  - Axios for HTTP requests
+ 
+
+  
+## Installation
+### Prerequisites
+- Node.js
+- npm or yarn
+- MongoDB
+
+  ### Setup
+1. **Clone the repository**
+   `git clone https://github.com/your-username/delivery-matrix.git`
+   `cd delivery-matrix`
+Install dependencies
+
+
+# For both backend and frontend
+`npm install`
+Environment Variables
+Create a .env file in the root directory and add the following:
+
+
+MONGO_URI=your-mongodb-uri
+JWT_SECRET=your-secret-key
+CLOUDINARY_URL=your-cloudinary-url (if applicable)
+
+
+Run the application
+
+
+# Run backend
+cd backend
+npm run dev
+
+# Run frontend
+cd frontend
+npm start
+The app will be available at http://localhost:3000.
