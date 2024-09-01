@@ -5,8 +5,9 @@ import { useForm } from "react-hook-form"
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 import { ImCross } from "react-icons/im";
 import { toast } from '@/components/ui/use-toast';
-import { useLocation, useNavigate } from 'react-router-dom';
+import {useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '@/components/SocialLogin/SocialLogin';
+import { Button } from '../../components/ui/button';
 
 
 
@@ -25,7 +26,7 @@ const Login = () => {
     const onSubmit = (data) => {
 
         console.log(data);
-        
+
         signIn(data.email, data.password)
             .then(result => {
                 const user = result.user
@@ -34,13 +35,13 @@ const Login = () => {
                     title: (
                         <div className='flex gap-2 items-center text-green-700 text-xl'>
                             <IoCheckmarkDoneCircle />
-                            <h2 className="">{user?.displayName ? user?.displayName :'User'} logged in successfully</h2>
+                            <h2 className="">{user?.displayName ? user?.displayName : 'User'} logged in successfully</h2>
                         </div>
                     )
                 })
-                navigate(from, {replace:true})
+                navigate(from, { replace: true })
             })
-            .catch(error =>{
+            .catch(error => {
                 toast({
                     title: (
                         <div className='flex gap-2 items-center text-red-700 text-xl'>
@@ -55,13 +56,29 @@ const Login = () => {
     }
     return (
         <div>
-            <SectionTitle heading="Login"></SectionTitle>
-
+            <SectionTitle
+                heading="Login"></SectionTitle>
             <div className="hero ">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Welcome Back to DeliverMatrix</h1>
-                        <p className="py-6">Log in to your account to manage your parcels, track deliveries, and access all our features.</p>
+                    <div
+                        className="hero h-[400px]"
+                        style={{
+                            backgroundImage: "url(https://images.unsplash.com/photo-1545591841-4a97f1da8d1f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+                        }}>
+                        <div className="hero-overlay bg-opacity-60"></div>
+                        <div className="hero-content text-neutral-content text-center">
+                            <div className="max-w-md">
+                                <h1 className="mb-5 text-5xl font-bold">Glad to see you again!</h1>
+                                <p className="mb-5">
+                                 Log in to access your account.
+                                </p>
+                                <h1 className="mb-5 text-3xl font-bold">Do not have any account?</h1>
+                                <a href="/registration">
+                                <Button>Register</Button>
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
                     <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
@@ -83,7 +100,7 @@ const Login = () => {
                                 <button className="btn btn-primary">Login</button>
                             </div>
                         </form>
-                    <SocialLogin></SocialLogin>
+                        <SocialLogin></SocialLogin>
                     </div>
                 </div>
             </div>

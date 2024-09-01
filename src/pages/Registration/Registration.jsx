@@ -8,6 +8,7 @@ import { useForm } from "react-hook-form"
 import { ImCross } from 'react-icons/im';
 import { IoCheckmarkDoneCircle } from 'react-icons/io5';
 import { useNavigate } from 'react-router-dom';
+import { Button } from '../../components/ui/button';
 
 
 const Registration = () => {
@@ -88,9 +89,25 @@ const Registration = () => {
             <SectionTitle heading="Registration"></SectionTitle>
             <div className="hero ">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Join DeliverMatrix</h1>
-                        <p className="py-6">Create an account to start managing your deliveries with ease. Sign up now to access all our advanced parcel management features.</p>
+                <div
+                        className="hero h-[400px]"
+                        style={{
+                            backgroundImage: "url(https://images.unsplash.com/photo-1545591841-4a97f1da8d1f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+                        }}>
+                        <div className="hero-overlay bg-opacity-60"></div>
+                        <div className="hero-content text-neutral-content text-center">
+                            <div className="max-w-md">
+                                <h1 className="mb-5 text-5xl font-bold">Glad to see you again!</h1>
+                                <p className="mb-5">
+                                 Log in to access your account.
+                                </p>
+                                <h1 className="mb-5 text-3xl font-bold">Do not have any account?</h1>
+                                <a href="/registration">
+                                <Button>Register</Button>
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
                     <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
