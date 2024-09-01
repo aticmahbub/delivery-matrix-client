@@ -90,7 +90,7 @@ const Registration = () => {
             <div className="hero ">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                 <div
-                        className="hero bg-contain h-[600px] w-[450px] rounded-xl"
+                        className="hero bg-cover bg-no-repeat h-[600px] w-[500px] rounded-xl"
                         style={{
                             backgroundImage: "url(https://plus.unsplash.com/premium_photo-1661907153090-93759d68acb1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
                         }}>

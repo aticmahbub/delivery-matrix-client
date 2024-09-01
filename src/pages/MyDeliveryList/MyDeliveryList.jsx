@@ -70,11 +70,11 @@ const MyDeliveryList = () => {
     }
 
     return (
-        <div>
+        <div className="w-[1200px]">
             <SectionTitle heading='My Delivery List'></SectionTitle>
 
             <div className="overflow-x-auto">
-                <table className="table table-zebra">
+                <table className="table ">
                     {/* head */}
                     <thead>
                         <tr>

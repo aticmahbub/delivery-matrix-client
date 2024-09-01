@@ -22,6 +22,7 @@ const Banner = () => {
                     Discover the Best Deals on Delivery Matrix! <br />Shop Now for Exclusive Discounts and Unbeatable Prices
                     </p>
                     <Button className="">Shop Now</Button>
+                    
                 </div>
             </div>
         </div>
