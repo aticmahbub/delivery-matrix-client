@@ -90,20 +90,20 @@ const Registration = () => {
             <div className="hero ">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                 <div
-                        className="hero h-[400px]"
+                        className="hero bg-contain h-[600px] w-[450px] rounded-xl"
                         style={{
-                            backgroundImage: "url(https://images.unsplash.com/photo-1545591841-4a97f1da8d1f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+                            backgroundImage: "url(https://plus.unsplash.com/premium_photo-1661907153090-93759d68acb1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
                         }}>
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-neutral-content text-center">
                             <div className="max-w-md">
-                                <h1 className="mb-5 text-5xl font-bold">Glad to see you again!</h1>
+                                <h1 className="mb-5 text-5xl font-bold">Join us today!</h1>
                                 <p className="mb-5">
-                                 Log in to access your account.
+                                Register now and be part of something great.
                                 </p>
-                                <h1 className="mb-5 text-3xl font-bold">Do not have any account?</h1>
-                                <a href="/registration">
-                                <Button>Register</Button>
+                                <h1 className="mb-5 text-3xl font-bold">Already have an account?</h1>
+                                <a href="/login">
+                                <Button>Login</Button>
                                 </a>
                             </div>
 
