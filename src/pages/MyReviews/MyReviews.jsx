@@ -27,9 +27,9 @@ const MyReviews = () => {
       <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">What Our Customers Are Saying</h2>
     </div>
     <ul role="list"
-      className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
+      className="mx-auto mt-16  max-w-2xl  gap-6 sm:gap-8 lg:mt-20 lg:max-w-none ">
       <li>
-        <ul role="list" className="flex flex-col gap-y-6 sm:gap-y-8  grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <ul role="list" className="gap-6 gap-y-6 sm:gap-y-8  grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
          { 
             specificReview.map(item=><li key={item._id}>
             <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"><svg aria-hidden="true"
