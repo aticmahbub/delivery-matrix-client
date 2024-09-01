@@ -16,7 +16,7 @@ import { FaMagnifyingGlassLocation } from "react-icons/fa6";
 
 const FeaturesSection = () => {
     return (
-        <div className=" animate__backInUp">
+        <div className=" bg-secondary-green animate__backInUp">
             <SectionTitle
             heading="Features Section"
             ></SectionTitle>
@@ -31,7 +31,7 @@ const FeaturesSection = () => {
                     <p> Always know where your parcels are with our precise tracking system.</p>
                 </CardContent>
                 <CardFooter>
-                    <Button>Button</Button>
+                    <Button>Book Now</Button>
                 </CardFooter>
             </Card>
             <Card>
@@ -45,7 +45,7 @@ const FeaturesSection = () => {
                     <p> Plan ahead and schedule your parcel deliveries according to your convenience with our scheduled delivery feature.</p>
                 </CardContent>
                 <CardFooter>
-                    <Button>Button</Button>
+                    <Button>Book Now</Button>
                 </CardFooter>
             </Card>
             <Card>
@@ -59,7 +59,7 @@ const FeaturesSection = () => {
                     <p> Our platform ensures the safe and secure handling of parcels at every stage of the delivery process, protecting your shipments from damage or loss.</p>
                 </CardContent>
                 <CardFooter>
-                    <Button>Button</Button>
+                    <Button>Book Now</Button>
                 </CardFooter>
             </Card>
         </div>

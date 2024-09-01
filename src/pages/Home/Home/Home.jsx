@@ -5,7 +5,7 @@ import StatisticsSection from "../StatisticsSection/StatisticsSection";
 
 const Home = () => {
     return (
-        <div className="animate__heartBeat">
+        <div className="">
            <Banner></Banner>
            <FeaturesSection></FeaturesSection>
            <StatisticsSection></StatisticsSection>

@@ -90,7 +90,7 @@ import ChartApex from "../pages/ChartApex/ChartApex";
                 element: <PrivateRoute><ChartApex></ChartApex></PrivateRoute>
             },
 
-            
+            // deliveryman menu
             {
                 path: 'updateBooking/:id',
                 element: <PrivateRoute><UpdateBooking></UpdateBooking></PrivateRoute>

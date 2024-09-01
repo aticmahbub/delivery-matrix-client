@@ -14,7 +14,7 @@ const NavBar = () => {
             .catch(error => console.log(error))
     }
     return (
-        <div className="navbar px-10 bg-new-white">
+        <div className="navbar px-10 bg-secondary-green">
             <div className="flex-1">
                 <img className='h-12' src={logo} alt="" />
                 <Link to='/' className="text-xl font-bold">Deliver Matrix</Link>
